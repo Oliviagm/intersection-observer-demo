@@ -46,6 +46,13 @@ function intersectionHandler(entries, observer) {
         if  (entry.isIntersecting) {
             //add active if intersecting
 entry.target.classList.add("active");
+
+//Get the color of the intersecting element
+let color= entry.target.dataset.color;
+//Apply color to background of body
+
+document.body.style.backgroundColor = color;
+
         } else {
             // remove active if no longer intersecting
             entry.target.classList.remove("active");
