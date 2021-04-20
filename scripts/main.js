@@ -38,7 +38,7 @@ if it starts to intersect what do we want to do?
 If it ceases to intersect what do we want to do?
 -Remove the active class
 */
-function intersectionHandler( entries, observer) {
+function intersectionHandler(entries, observer) {
     //Do the stuff described above
     console.log(entries);
     entries.forEach(entry => {
@@ -49,7 +49,6 @@ entry.target.classList.add("active");
         } else {
             // remove active if no longer intersecting
             entry.target.classList.remove("active");
-
         }
 
 
@@ -75,6 +74,6 @@ let images = document.querySelector("img");
 
  //  }
 
-   images.forEach(image) => {
+   images.forEach(image)  =>  {
        observer.observe(image);
    });
